@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main>
+      <div class="hero">
+        <h1>Поиск работы вахтой</h1>
+        <div class="hero-form-w">
+          <form class="hero__form">
+            <input type="text" placeholder="Должность или компания" />
+            <button class="btn2">Найти</button>
+          </form>
+          <ul>
+            <li><a href="">От прямых работодателей</a></li>
+            <li><a href="">Без опыта</a></li>
+            <li><a href="">С предоставлением жилья</a></li>
+            <li><a href="">С компенсацией проезда</a></li>
+          </ul>
+          <div class="hero-btn-w">
+            <a href="" class="btn">Разместить вакансию</a>
+          </div>
+        </div>
+      </div>
+      <section class="specialty">
+        <div class="contain">
+          <div class="h2">Вакансии по специальностям</div>
+          <div class="specialty__list">
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Автослесарь",
+                "vac": "8 вакансий",
+                "mon": "39 000 – 207 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Токарь-расточник",
+                "vac": "8 вакансий",
+                "mon": "39 000 – 207 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Повар-бригадир",
+                "vac": "8 вакансий",
+                "mon": "39 000 – 207 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Разнорабочий",
+                "vac": "22 вакансии",
+                "mon": "30 000 - 170 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Водитель-экспедитор",
+                "vac": "6 вакансий",
+                "mon": "75 000 - 130 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Электрогазосварщик",
+                "vac": "11 вакансий",
+                "mon": "75 000 - 130 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Инженер ПТО",
+                "vac": "9 вакансий",
+                "mon": "75 000 - 130 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Фрезеровщик",
+                "vac": "13 вакансий",
+                "mon": "75 000 - 130 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Геодезист",
+                "vac": "6 вакансий",
+                "mon": "52 000 - 270 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Машинист экскаватора",
+                "vac": "17 вакансий",
+                "mon": "45 000 - 315 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Моторист",
+                "vac": "8 вакансий",
+                "mon": "40 000 - 210 000 ₽"
+              })
+            </div>
+            <div class="specialty__col">
+              @@include('var/_specialty__it.html',{
+                "title":"Слесарь-электрик",
+                "vac": "6 вакансий",
+                "mon": "52 000 - 270 000 ₽"
+              })
+            </div>
+          </div>
+          <a href="" class="all">Все специальности</a>
+        </div>
+      </section>
+      <section class="fresh">
+        <div class="contain">
+          <div class="h2">Свежие вакансии</div>
+          <div class="fresh__row">
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"<img src='img/fresh-1.jpg'>",
+                "title":"Инженер",
+                "txt":"Требуются: промышленный альпинист (АКЗ) 4 раз. промышленный альпинист альпинист альпинист",
+                "reg":"Ямало-Ненецкий автономный округ",
+                "cit":"Салехард"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"",
+                "title":"Водитель самосвала",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"",
+                "title":"Инженер ПТО",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"<img src='img/fresh-2.jpg'>",
+                "title":"Машинист бульдозера",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"<img src='img/fresh-3.jpg'>",
+                "title":"Мастер",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"<img src='img/fresh-4.jpg'>",
+                "title":"Водитель категории D",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"",
+                "title":"Инженер ПТО",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+            <div class="fresh__col">
+              @@include('var/_fresh__it.html',{
+                "logo":"",
+                "title":"Машинист бульдозера",
+                "txt":"Требуются: Водитель категории C, E Водитель трала Инженер-геодезист Инженер ПТО ...",
+                "reg":"Московская область",
+                "cit":"Москва"
+              })
+            </div>
+          </div>
+          <a href="" class="all">Больше вакансий</a>
+        </div>
+      </section>
+      <section class="biggest">
+        <div class="contain">
+          <div class="h2">Крупнейшие работодатели</div>
+          <div class="biggest__slider">
+            <a href="">
+              <span><img src="img/biggest-1.png" alt=""></span>
+              <p>167 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-2.png" alt=""></span>
+              <p>108 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-3.png" alt=""></span>
+              <p>77 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-4.png" alt=""></span>
+              <p>36 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-1.png" alt=""></span>
+              <p>167 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-2.png" alt=""></span>
+              <p>108 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-3.png" alt=""></span>
+              <p>77 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-4.png" alt=""></span>
+              <p>167 объявлений</p>
+            </a>
+            <a href="">
+              <span><img src="img/biggest-2.png" alt=""></span>
+              <p>108 объявлений</p>
+            </a>
+          </div>
+          <div class="slick__actions"></div>
+          <a href="" class="all">Все работодатели</a>
+        </div>
+      </section>
+      <div class="subscribe">
+        <div class="subscribe__contain contain">
+          <div class="subscribe__l">
+            <div>Подписывайтесь на нас</div>
+            <p>новости и информация об актуальных <br> вакансиях от крупнейших работодателей</p>
+          </div>
+          <div class="subscribe__r">
+            <a href="" class="btn-o"><img src="img/tg.svg">Telegram</a>
+            <a href="" class="btn-o"><img src="img/vk.svg">ВКонтакте</a>
+          </div>
+        </div>
+      </div>
+      <section class="regions">
+        <div class="contain">
+          <div class="h2">Вакансии по регионам</div>
+          <ul>
+            <li><a href="">Амурская область</a></li>
+            <li><a href="">Кемеровская область</a></li>
+            <li><a href="">Мурманская область</a></li>
+            <li><a href="">Республика Бурятия</a></li>
+            <li><a href="">Архангельская область</a></li>
+            <li><a href="">Краснодарский край</a></li>
+            <li><a href="">Московская область</a></li>
+            <li><a href="">Республика Коми</a></li>
+            <li><a href="">Забайкальский край</a></li>
+            <li><a href="">Красноярский край</a></li>
+            <li><a href="">Мурманская область</a></li>
+            <li><a href="">Республика Саха (Якутия)</a></li>
+            <li><a href="">Иркутская область</a></li>
+            <li><a href="">Ленинградская область</a></li>
+            <li><a href="">Новосибирская область</a></li>
+            <li><a href="">Республика Татарстан</a></li>
+          </ul>
+          <a href="" class="all">Все регионы</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="contain">
+          <div class="h2">Отзывы вахтовиков</div>
+          <div class="reviews__slider">            
+            @@include('var/_reviews__it.html',{
+              "img":"img/reviews-1.png",
+              "title":"Полюс Красноярск",
+              "txt":"Полюс Красноярск, как и в целом группа полюс, со своими плюсами и минусами но стабильной конкурирующей зп, быт общежития, на высоком уровне вплоть до бильярдов, тренажерных залов, прачечных, столовых. Межвахта, проезд, перелет, оплачивается.",
+              "name":"Иван Иванов",
+              "dol":"— Инженер ПТО",
+              "stag":"Стаж в компании: 2 года",
+              "date":"10.12.2022"
+            })
+            @@include('var/_reviews__it.html',{
+              "img":"img/reviews-2.png",
+              "title":"Севертранс",
+              "txt":"В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята...",
+              "name":"Михаил Егоров",
+              "dol":"— Водитель C",
+              "stag":"Стаж в компании: Не указано",
+              "date":"10.12.2022"
+            })
+            @@include('var/_reviews__it.html',{
+              "img":"img/reviews-3.png",
+              "title":"Промнефть-Сервис",
+              "txt":"Обманывают! Подписываешь один договор, на руки дают другой, устраиваешься как в нефтедобывающию компанию приезжаешь на место крыть крыши",
+              "name":"Сергей Вязенцев",
+              "dol":"— Инженер ПТО",
+              "stag":"Стаж в компании: Менее года",
+              "date":"10.12.2022"
+            })
+            @@include('var/_reviews__it.html',{
+              "img":"img/reviews-2.png",
+              "title":"Севертранс",
+              "txt":"В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята...",
+              "name":"Михаил Егоров",
+              "dol":"— Водитель C",
+              "stag":"Стаж в компании: Не указано",
+              "date":"10.12.2022"
+            })
+            @@include('var/_reviews__it.html',{
+              "img":"img/reviews-3.png",
+              "title":"Промнефть-Сервис",
+              "txt":"Обманывают! Подписываешь один договор, на руки дают другой, устраиваешься как в нефтедобывающию компанию приезжаешь на место крыть крыши",
+              "name":"Сергей Вязенцев",
+              "dol":"— Инженер ПТО",
+              "stag":"Стаж в компании: Менее года",
+              "date":"10.12.2022"
+            })
+          </div>
+          <div class="slick__actions"></div>
+          <a href="" class="all">Все отзывы</a>
+        </div>
+      </section>
+      <section class="pubs">
+        <div class="contain">
+          <div class="h2">Последние публикации</div>
+          <div class="pubs__row">
+            <div class="pubs__col">
+              @@include('var/_pubs__it.html',{
+                "img":"img/pubs-1.jpg",
+                "cat":"Советы",
+                "title":"Как изменить жизнь на несколько месяцев, или Правда о вахте",
+                "date":"23 декабря 2022"
+              })
+            </div>
+            <div class="pubs__col">
+              @@include('var/_pubs__it.html',{
+                "img":"img/pubs-2.jpg",
+                "cat":"Право",
+                "title":"Что взять с собой, если собираетесь работать на севере?",
+                "date":"21 декабря 2022"
+              })
+            </div>
+            <div class="pubs__col">
+              @@include('var/_pubs__it.html',{
+                "img":"img/pubs-3.jpg",
+                "cat":"Саморазвитие",
+                "title":"Советы будущим вахтовикам",
+                "date":"3 декабря 2022"
+              })
+            </div>
+            <div class="pubs__col">
+              @@include('var/_pubs__it.html',{
+                "img":"img/pubs-4.jpg",
+                "cat":"Истории вахтовиков",
+                "title":"Что нужно знать о работе вахтовым методом",
+                "date":"17 октября 2022"
+              })
+            </div>
+          </div>
+          <a href="" class="all">Еще статьи</a>
+        </div>
+      </section>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>

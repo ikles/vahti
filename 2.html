@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3.Поиск вакансий по названию компании</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main>
+      @@include('var/_tsearch.html')
+      <div class="tvacancies">
+        <div class="contain">
+          <h1>Вакансии для водителей в Сахалинской области</h1>
+          <p>Найдено 12 вакансий</p>
+          <ul>
+            <li><a href="">Южно-Сахалинск</a></li>
+            <li><a href="">Оха</a></li>
+            <li><a href="">Северо-Курильск</a></li>
+            <li><a href="">Горнозаводск</a></li>
+            <li><a href="">Корсаков</a></li>
+            <li><a href="">Александровск-Сахалинский</a></li>
+            <li><a href="">Курильск</a></li>
+            <li><a href="">Корсаков</a></li>
+            <li><a href="">Долинск</a></li>
+            <li><a href="">Анива</a></li>
+            <li><a href="">Лесогорское</a></li>            
+          </ul>
+        </div>
+      </div>
+      <div class="filterlist">
+        <div class="contain">
+          <div class="row">
+            <div class="col-l">
+              <div class="lfilter__item">
+                <p>Город</p>
+                <div class="lfilter__input-w">
+                  <div>от </div>                  
+                  <input type="text" class="curr" value='50 000 ₽'>                  
+                </div>
+                <label class="label-box">
+                  <input type="checkbox" checked>
+                  <span></span>
+                  <div>С указанной зарплатой</div>
+                </label>
+              </div>
+              <div class="lfilter__item">
+                <p>Регион</p>                
+                <input type="text" class="curr" value='Сахалинская область'>
+              </div>
+              <div class="lfilter__item">
+                <p>Город</p>
+                <select>
+                  <option value="Выбрать">Выбрать</option>
+                  <option value="Москва">Москва</option>
+                </select>                
+              </div>
+              <div class="lfilter__item">
+                <p>Специальность</p>
+                <select class="selected">
+                  <option value="Выбрать">Выбрать</option>
+                  <option selected="selected" value="Водитель">Водитель</option>
+                </select>                
+              </div>
+              <div class="lfilter__item">
+                <p>Компания</p>
+                <select class="selected">
+                  <option value="Водитель">Водитель</option>
+                  <option selected="selected" value="Все компании">Все компании</option>
+                </select>                
+              </div>
+              <div class="lfilter__item">
+                <p>Срок вахты</p>    
+                <label class="label-box">
+                  <input type="checkbox" checked name="time">
+                  <span></span>
+                  <div>15 - 15</div>
+                </label>            
+                <label class="label-box">
+                  <input type="checkbox" name="time">
+                  <span></span>
+                  <div>30 - 15</div>
+                </label>      
+                <label class="label-box">
+                  <input type="checkbox" name="time">
+                  <span></span>
+                  <div>30 - 30</div>
+                </label>      
+                <label class="label-box">
+                  <input type="checkbox" name="time">
+                  <span></span>
+                  <div>60 - 30</div>
+                </label>      
+                <label class="label-box">
+                  <input type="checkbox" name="time">
+                  <span></span>
+                  <div>90 - 30</div>
+                </label>      
+                <label class="label-box">
+                  <input type="checkbox" name="time">
+                  <span></span>
+                  <div>Другое</div>
+                </label>      
+              </div>
+              <div class="lfilter__item">
+                <p>Опыт работы</p>
+                <label class="label-radio">
+                  <input type="radio" name="experience" checked>
+                  <span></span>
+                  <div>Не имеет значения</div>
+                </label>      
+                <label class="label-radio">
+                  <input type="radio" name="experience">
+                  <span></span>
+                  <div>От 1 года</div>
+                </label>      
+                <label class="label-radio">
+                  <input type="radio" name="experience">
+                  <span></span>
+                  <div>от 3 до 5 лет</div>
+                </label>
+                <label class="label-radio">
+                  <input type="radio" name="experience">
+                  <span></span>
+                  <div>Более 5 лет</div>
+                </label>
+              </div>
+              <div class="lfilter__item">
+                <p>Дополнительно</p>    
+                <label class="label-box">
+                  <input type="checkbox" name="more">
+                  <span></span>
+                  <div>С предоставлением жилья</div>
+                </label>      
+                <label class="label-box">
+                  <input type="checkbox" name="more">
+                  <span></span>
+                  <div>С предоставлением питания</div>
+                </label>
+                <label class="label-box">
+                  <input type="checkbox" name="more">
+                  <span></span>
+                  <div>С компенсацией проезда</div>
+                </label>
+                <label class="label-box">
+                  <input type="checkbox" name="more">
+                  <span></span>
+                  <div>Подходит для женщин</div>
+                </label>
+                <label class="label-box">
+                  <input type="checkbox" name="more">
+                  <span></span>
+                  <div>Скрыть объявления кадровых агентств
+</div>
+                </label>
+              </div>
+              <div class="lfilter__item">
+                <p>Период публикации</p>
+                <label class="label-radio">
+                  <input type="radio" name="period">
+                  <span></span>
+                  <div>За всёв ремя</div>
+                </label>                      
+                <label class="label-radio">
+                  <input type="radio" name="period">
+                  <span></span>
+                  <div>За месяц</div>
+                </label>    
+                <label class="label-radio">
+                  <input type="radio" name="period">
+                  <span></span>
+                  <div>За неделю</div>
+                </label>    
+                <label class="label-radio">
+                  <input type="radio" name="period">
+                  <span></span>
+                  <div>За последние 3 дня</div>
+                </label>    
+                <label class="label-radio">
+                  <input type="radio" name="period">
+                  <span></span>
+                  <div>За сутки</div>
+                </label>    
+
+              </div>
+
+              <div class="lfilter__item">
+                <p>Компания</p>                
+              </div>
+            </div><!--col-l-->
+            <div class="col-r">
+
+            </div><!--col-r-->
+          </div><!--row-->
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
