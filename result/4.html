@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4.Добавление вакансии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/select2.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+      <div class="header__r">
+        <ul>
+          <li><a href="">Вакансии</a></li>
+          <li><a href="">Специальности</a></li>
+          <li><a href="">Работодатели</a></li>
+          <li><a href="">Отзывы</a></li>
+        </ul>
+        <a href="" class="header__fav">
+          <img src="img/fav.svg" />
+          <span>10</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+      <div class="tsearch"> 
+  <div class="contain">
+    <form class="hero__form">
+      <input type="text" placeholder="Должность или компания" />
+      <button class="btn2">Найти</button>
+    </form>
+    <a href="" class="btn">Разместить вакансию</a>
+  </div>
+</div>
+      <div class="addvacancie">
+        <div class="contain">
+          <h1>Опубликовать вакансию</h1>
+          <p>Для добавления вакансии заполните форму. После проверки модератором, она будет опубликована на сайте.  Если у вас несколько вакансий (в рамках одной компании), то добавляйте, пожалуйста, все их списком, а не каждую вакансию отдельно.</p>
+          <form>
+            <div class="form__block">
+              <div class="h4">Данные о компании</div>
+              <div class="form__block-in">
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Название компании<sup>*</sup></p>
+                    <input type="text" placeholder="Введите название компании">
+                  </div>
+                  <div class="form__col-50">
+                    <p>ИНН<sup>*</sup></p>
+                    <input type="text" placeholder="Введите ИНН компании">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Регион<sup>*</sup></p>
+                    <input type="text" placeholder="Укажите регион">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Город<sup>*</sup></p>
+                    <input type="text" placeholder="Укажите город">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Тип компании<sup>*</sup></p>
+                    <label class="label-radio">
+                      <input type="radio" name="type" checked="">
+                      <span></span>
+                      <div>Прямой работодатель</div>
+                    </label>
+                    <label class="label-radio">
+                      <input type="radio" name="type">
+                      <span></span>
+                      <div>Кадровое агентство</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!--bl-->
+            <div class="form__block">
+              <div class="h4">Контактные данные</div>
+              <div class="form__block-in">
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Контактное лицо</p>
+                    <input type="text" placeholder="Имя,  должность">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Телефон</p>
+                    <input type="text" placeholder="+7" class="_phone">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Email</p>
+                    <input type="text" placeholder="Введите Email">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Сайт</p>
+                    <input type="text" placeholder="Официальный сайт компании">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--bl-->
+            <div class="form__block vacancy__block vacancy_1">
+              <div class="h4">Вакансия 1</div>
+              <div class="form__block-in">
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Название<sup>*</sup></p>
+                    <input type="text" placeholder="Название должности">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Зарплата (₽/месяц)</p>
+                    <div class="form__row">
+                      <div class="form__col-50">                        
+                        <input type="text" placeholder="от">
+                      </div>
+                      <div class="form__col-50">                        
+                        <input type="text" placeholder="до">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Описание вакансии</p>
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Требования </p>
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Условия </p>
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Обязанности </p>
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Регион<sup>*</sup></p>
+                    <input type="text" placeholder="Введите регион места работы">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Населенный пункт<sup>*</sup></p>
+                    <input type="text" placeholder="Укажите город места работы">
+                  </div>
+                </div>
+                <div class="form__actions">
+                  <div class="form__actions-item">                    
+                    <p>Срок вахты</p>    
+                    <label class="label-box">
+                      <input type="checkbox" checked="" name="time">
+                      <span></span>
+                      <div>15 - 15</div>
+                    </label>            
+                    <label class="label-box">
+                      <input type="checkbox" name="time">
+                      <span></span>
+                      <div>30 - 15</div>
+                    </label>      
+                    <label class="label-box">
+                      <input type="checkbox" name="time">
+                      <span></span>
+                      <div>30 - 30</div>
+                    </label>      
+                    <label class="label-box">
+                      <input type="checkbox" name="time">
+                      <span></span>
+                      <div>60 - 30</div>
+                    </label>      
+                    <label class="label-box">
+                      <input type="checkbox" name="time">
+                      <span></span>
+                      <div>90 - 30</div>
+                    </label>      
+                    <label class="label-box">
+                      <input type="checkbox" name="time">
+                      <span></span>
+                      <div>Другое</div>
+                    </label>      
+                  </div>
+
+                  <div class="form__actions-item">                    
+                    <p>Опыт работы</p>
+                    <label class="label-radio">
+                      <input type="radio" name="experience" checked="">
+                      <span></span>
+                      <div>Не имеет значения</div>
+                    </label>      
+                    <label class="label-radio">
+                      <input type="radio" name="experience">
+                      <span></span>
+                      <div>От 1 года</div>
+                    </label>      
+                    <label class="label-radio">
+                      <input type="radio" name="experience">
+                      <span></span>
+                      <div>от 3 до 5 лет</div>
+                    </label>
+                    <label class="label-radio">
+                      <input type="radio" name="experience">
+                      <span></span>
+                      <div>Более 5 лет</div>
+                    </label>
+                  </div>
+
+                  <div class="form__actions-item">                    
+                    <p>Дополнительно</p>    
+                    <label class="label-box">
+                      <input type="checkbox" name="more">
+                      <span></span>
+                      <div>Предоставляем жилье</div>
+                    </label>
+                    <label class="label-box">
+                      <input type="checkbox" name="more">
+                      <span></span>
+                      <div>Предоставляем питание</div>
+                    </label>
+                    <label class="label-box">
+                      <input type="checkbox" name="more">
+                      <span></span>
+                      <div>Компенсируем проезд</div>
+                    </label>
+                    <label class="label-box">
+                      <input type="checkbox" name="more">
+                      <span></span>
+                      <div>Подходит для женщин</div>
+                    </label>                          
+                  </div>
+                </div>
+                <div class="vacancy__actions">
+                  <a href="" class="btn2">Вакансия 2</a>
+                  <label class="label-box">
+                    <input type="checkbox" checked="" name="double">
+                    <span></span>
+                    <div>Дублировать вакансию</div>
+                  </label>
+                </div>
+              </div>
+            </div><!--vacancy__block-->
+
+            <div class="confirm">
+              <img src="img/robot.jpg" alt="">
+              <button class="btn">Отправить</button>
+              <p>Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a>.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">  
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__l">
+        <a href="index.html" class="footer__logo"><img src="img/logo-white.svg" /></a><a href="" class="btn-o">Разместить вакансию</a>
+      </div>
+      <ul class="footer__ul">
+        <li><a href="">Каталог вакансий</a></li>
+        <li><a href="">Отзывы</a></li>
+        <li><a href="">Публикации</a></li>
+        <li><a href="">Каталог работодателей</a></li>
+        <li><a href="">Черный список</a></li>
+        <li><a href="">О сайте</a></li>
+      </ul>
+      <div class="footer__socs">
+        <a href=""><img src="img/vk.svg" /></a>
+        <a href=""><img src="img/tg.svg" /></a>
+      </div>
+    </div>
+    <p>© 2022 Вахты.Ру <a href="">Политика обработки персональных данных</a> 
+      <a href="">Соглашение об использовании</a></p>
+  </div>
+</footer>
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -185,6 +185,27 @@ $('.eye-3').click(function (e) {
     });
   }
 
+
+/*function vacancyDublicate() {
+  $('.vacancy__block').each(function () {
+    const self = $(this);
+    let btn = self.find('.vacancy__actions .btn2');
+    let vacancy2 = self.clone();
+    btn.click(function (e) {
+      e.preventDefault();
+      self.after(vacancy2);
+      vacancyDublicate();
+    });
+  });  
+}
+
+vacancyDublicate();*/
+
+
+
+  
+  $("._phone").mask("+7 (999) 999-99-99");
+
   $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
   $('.accordion-content').first().slideDown().toggleClass('open-content');
