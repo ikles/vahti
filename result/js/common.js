@@ -123,6 +123,15 @@ $('.eye-3').click(function (e) {
   });
 
 
+  $('.filterlist__fav input[type=checkbox]').click(function () {
+    if ($(this).is(':checked')) {
+      let count = +$('.header__fav span').html();      
+      $('.header__fav span').html(count + 1);
+    } else {
+      let count = +$('.header__fav span').html();      
+      $('.header__fav span').html(count - 1);
+    }    
+  });
 
 
 
