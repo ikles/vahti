@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>13.Работодатели по отраслям - Категорийная страница</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main>
+      @@include('var/_tsearch.html')
+      <div class="tvacancies">
+        <div class="contain">
+          <h1>Компании-работодатели Самарской области</h1>
+          <p>Найдено 63 компании</p>          
+        </div>
+      </div>
+      <div class="filterlist">
+        <div class="contain">
+          <div class="row">
+            <div class="col-l">
+              @@include('var/_lfilter3.html')
+            </div><!--col-l-->
+            <div class="col-r">
+              @@include('var/_tsort2.html')
+              <div class="filterlist__list2">
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-1.jpg",
+                  "title":"Геолад-Скважинные Технологии Поволжье",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Нефтесервис",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>4 объявления</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-5.jpg",
+                  "title":"Возрождение",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Строительство",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"",
+                  "title":"Служба строительного и технического контроля",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Другое",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-5.jpg",
+                  "title":"Возрождение",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Строительство",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+              </div>
+              @@include('var/_spagin.html')
+            </div><!--col-r-->
+          </div><!--row-->
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,41 @@
+<form class="lfilter">  
+  <div class="lfilter__item">
+    <p>Компания</p>                
+    <input type="text" class="_search" value='Название'>
+  </div>
+  <div class="lfilter__item">
+    <p>Регион</p>
+    <select class="selected">
+      <option value="Самарская область">Самарская область</option>
+      <option value="Москва">Москва</option>
+    </select>                
+  </div>  
+  <div class="lfilter__item">
+    <p>Отрасль</p>
+    <select class="selected">
+      <option value="Золотодобыча">Золотодобыча</option>
+      <option value="Все отрасли">Все отрасли</option>
+    </select>                
+  </div>
+
+
+  <div class="lfilter__item">
+    <p>Опыт работы</p>
+    <label class="label-radio">
+      <input type="radio" name="comp" checked>
+      <span></span>
+      <div>Все компании</div>
+    </label>      
+    <label class="label-radio">
+      <input type="radio" name="comp">
+      <span></span>
+      <div>Прямой работодатель</div>
+    </label>      
+    <label class="label-radio">
+      <input type="radio" name="comp">
+      <span></span>
+      <div>Кадровое агентство</div>
+    </label>
+  </div> 
+  <input type="reset" value="Сбросить фильтры">
+</form>

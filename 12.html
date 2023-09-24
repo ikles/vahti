@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12.Работодатели по регионам - Категорийная страница</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main>
+      @@include('var/_tsearch.html')
+      <div class="tvacancies">
+        <div class="contain">
+          <h1>Компании-работодатели Самарской области</h1>
+          <p>Найдено 63 компании</p>
+          <ul>
+            <li><a href="">Самара</a></li> 
+            <li><a href="">Новокуйбышевск</a></li> 
+            <li><a href="">Чапаевск</a></li> 
+            <li><a href="">Усть-Кинельский</a></li> 
+            <li><a href="">Тольятти</a></li> 
+            <li><a href="">Октябрьск</a></li> 
+            <li><a href="">Нефтегорск</a></li> 
+            <li><a href="">Волжский</a></li> 
+            <li><a href="">Сызрань</a></li> 
+            <li><a href="">Кинель</a></li> 
+          </ul>
+        </div>
+      </div>
+      <div class="filterlist">
+        <div class="contain">
+          <div class="row">
+            <div class="col-l">
+              @@include('var/_lfilter2.html')
+            </div><!--col-l-->
+            <div class="col-r">
+              @@include('var/_tsort2.html')
+              <div class="filterlist__list2">
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-1.jpg",
+                  "title":"Геолад-Скважинные Технологии Поволжье",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Нефтесервис",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>4 объявления</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-5.jpg",
+                  "title":"Возрождение",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Строительство",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"",
+                  "title":"Служба строительного и технического контроля",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Другое",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+                @@include('var/_filterlist__it2.html',{
+                  "img":"img/filterlist-5.jpg",
+                  "title":"Возрождение",
+                  "lbl":"",                  
+                  "rate":"4,2",
+                  "cat":"Строительство",
+                  "stars":"<ul class='stars'><li></li><li></li><li></li><li></li><li class='star-o'></li></ul>",
+                  "last": "Самарская область <a href=''>7 объявлений</a>"
+                })
+              </div>
+              @@include('var/_spagin.html')
+            </div><!--col-r-->
+          </div><!--row-->
+        </div>
+      </div>
+      <section class="regions2">
+        <div class="contain">              
+          <ul>            
+            <li><a href="">Агропромышленный комплекс</a></li>
+            <li><a href="">Безопасность</a></li>
+            <li><a href="">Бытовые услуги</a></li>
+            <li><a href="">Военно-промышленный комплекс</a></li>
+            <li><a href="">Гостиницы</a></li>
+            <li><a href="">Добыча железной руды</a></li>
+            <li><a href="">Добыча и обогащение угля</a></li>
+            <li><a href="">Добыча меди</a></li>
+            <li><a href="">ЖКХ</a></li>
+            <li><a href="">Золотодобыча</a></li>
+            <li><a href="">Нефтесервис</a></li>
+            <li><a href="">Нефть и газ</a></li>
+            <li><a href="">Энергетика</a></li>
+            <li><a href="">Металлургия</a></li>
+            <li><a href="">Продукты питания</a></li>
+            <li><a href="">Производство стройматериалов</a></li>
+            <li><a href="">Оптовая, розничная торговля</a></li>
+            <li><a href="">Подбор персонала</a></li>
+            <li><a href="">Строительство</a></li>
+            <li><a href="">Телеком, Связь</a></li>
+            <li><a href="">Прочие производства</a></li>
+            <li><a href="">Ремонтно-сервисные услуги</a></li>
+            <li><a href="">Транспорт и логистика</a></li>
+            <li><a href="">Химическая и нефтехимическая промышленность</a></li>
+            <li><a href="">Рестораны, Общественное питание</a></li>
+            <li><a href="">Лесная промышленность, деревообработка</a></li>
+            <li><a href="">Рыбная промышленность, рыболовство</a></li>
+            <li><a href="">Машиностроение, станки и оборудование</a></li>
+            <li><a href="">Инженерно-изыскательские, гидрогеологические, геологоразведочные работы</a></li>
+            <li><a href="">Другое</a></li>
+          </ul>              
+        </div>
+      </section>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
