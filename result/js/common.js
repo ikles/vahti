@@ -98,7 +98,7 @@ jQuery(document).ready(function( $ ) {
 
 /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -109,7 +109,7 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-});
+});*/
 
 /************************************/
 
@@ -133,6 +133,19 @@ $('.eye-3').click(function (e) {
     }    
   });
 
+
+  $('.rev__name-r input[type=radio]').click(function () {
+    const self = $(this);
+    self.closest('.rev__name-r').find('label div').html('0');
+    if ($(this).is(':checked')) {
+      let count = +self.prev().html();            
+      if (count < 1) {
+        self.prev().html(count+1);      
+      }
+    } else {
+
+    }    
+  });
 
 
   function popup(openLink, windowEl, closeEl) {  

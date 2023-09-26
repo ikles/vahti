@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14.Отзывы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/select2.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+      <div class="header__r">
+        <ul>
+          <li><a href="">Вакансии</a></li>
+          <li><a href="">Специальности</a></li>
+          <li><a href="">Работодатели</a></li>
+          <li><a href="">Отзывы</a></li>
+        </ul>
+        <a href="" class="header__fav">
+          <img src="img/fav.svg" />
+          <span>10</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+      <div class="tsearch"> 
+  <div class="contain">
+    <form class="hero__form">
+      <input type="text" placeholder="Должность или компания" />
+      <button class="btn2">Найти</button>
+    </form>
+    <a href="" class="btn">Разместить вакансию</a>
+  </div>
+</div>
+      <div class="tvacancies">
+        <div class="contain">
+          <h1>Отзывы вахтовиков</h1>
+        </div>
+      </div>
+      <div class="filterlist">
+        <div class="contain">
+          <div class="row">
+            <div class="col-l">
+              <form class="lfilter">  
+  <div class="lfilter__item">
+    <p>Компания</p>                
+    <input type="text" class="_search" value='Название'>
+  </div>
+  <div class="lfilter__item">
+    <p>Регион</p>
+    <select class="selected">
+      <option value="Все регионы">Все регионы</option>
+      <option value="Самарская область">Самарская область</option>
+    </select>                
+  </div>  
+  <div class="lfilter__item">
+    <p>Отрасль</p>
+    <select class="selected">
+      <option value="Все отрасли">Все отрасли</option>
+      <option value="Золотодобыча">Золотодобыча</option>
+    </select>                
+  </div>
+  <div class="lfilter__item">
+  <label class="label-box">
+    <input type="checkbox">
+    <span></span>
+    <div>Только негативные отзывы</div>
+  </label>
+  </div>
+  <input type="reset" value="Сбросить фильтры">
+</form>
+            </div><!--col-l-->
+            <div class="col-r">
+              <div class="tsort">
+  <p>Сортировать</p>
+  <div class="w192">
+    <select class="selected">
+      <option value="По рейтингу">По рейтингу</option>
+      <option value="По дате">По дате</option>
+    </select>  
+  </div>
+  <a href="/22.html" class="btn">Добавить отзыв</a>
+</div>              
+              <div class="filterlist__list2">
+                                <div class="filterlist__it">
+                  <div class="filterlist__row like">
+                    <div class="filterlist__l">
+                      <a href="" class="filterlist__logo">
+                        <img src='img/filterlist-1.jpg' alt=''>
+                      </a>
+                      <div class="filterlist__r">
+                        <div class="filterlist__top">
+                          <a href="">Транстех</a>          
+                        </div>
+                        <div class="filterlist__cont">                          
+                          <div>
+                            <div>4,2</div>
+                            <ul class="stars"><li></li><li></li><li></li><li></li><li class="star-o"></li></ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                        
+                  </div>
+                  <p>
+                    Полюс Красноярск, как и в целом группа полюс, со своими плюсами и минусами но стабильной конкурирующей зп, быт общежития, на высоком уровне вплоть до бильярдов, тренажерных залов, прачечных, столовых. Межвахта, проезд, перелет, оплачивается.
+                  </p>
+                  <div class="rev__name">
+                    <div class="rev__name-l">
+                      <p>Михаил Егоров</p>
+                      <div>— Водитель "C"</div>
+                    </div>
+                    <div class="rev__name-r">
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="like"></span>
+                      </label>
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="dis"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="rev__exp">Стаж в компании: 2 года</div>
+                  <div class="rev__date">10.12.2022</div>
+                </div>
+                                <div class="filterlist__it">
+                  <div class="filterlist__row dis">
+                    <div class="filterlist__l">
+                      <a href="" class="filterlist__logo">
+                        <img src='img/filterlist-3.jpg' alt=''>
+                      </a>
+                      <div class="filterlist__r">
+                        <div class="filterlist__top">
+                          <a href="">Севертранс</a>          
+                        </div>
+                        <div class="filterlist__cont">                          
+                          <div>
+                            <div>4,2</div>
+                            <ul class="stars"><li></li><li></li><li></li><li></li><li class="star-o"></li></ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                        
+                  </div>
+                  <p>
+                    В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята вовремя образумили..
+                  </p>
+                  <div class="rev__name">
+                    <div class="rev__name-l">
+                      <p>Михаил Егоров</p>
+                      <div>— Водитель "C"</div>
+                    </div>
+                    <div class="rev__name-r">
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="like"></span>
+                      </label>
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="dis"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="rev__exp">Стаж в компании: 2 года</div>
+                  <div class="rev__date">10.12.2022</div>
+                </div>
+                                <div class="filterlist__it">
+                  <div class="filterlist__row like">
+                    <div class="filterlist__l">
+                      <a href="" class="filterlist__logo">
+                        <img src='img/filterlist-3.jpg' alt=''>
+                      </a>
+                      <div class="filterlist__r">
+                        <div class="filterlist__top">
+                          <a href="">Севертранс</a>          
+                        </div>
+                        <div class="filterlist__cont">                          
+                          <div>
+                            <div>4,2</div>
+                            <ul class="stars"><li></li><li></li><li></li><li></li><li class="star-o"></li></ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                        
+                  </div>
+                  <p>
+                    В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята вовремя образумили..
+                  </p>
+                  <div class="rev__name">
+                    <div class="rev__name-l">
+                      <p>Михаил Егоров</p>
+                      <div>— Водитель "C"</div>
+                    </div>
+                    <div class="rev__name-r">
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="like"></span>
+                      </label>
+                      <label>
+                        <div>0</div>
+                        <input type="radio" name="mark">
+                        <span class="dis"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="rev__exp">Стаж в компании: 2 года</div>
+                  <div class="rev__date">10.12.2022</div>
+                </div>
+
+              </div>
+              <ul class="spagin">
+    <li class="active"><span>1</span></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>            
+</ul>
+            </div><!--col-r-->
+          </div><!--row-->
+        </div>
+      </div>
+    </main>
+    <footer class="footer">  
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__l">
+        <a href="index.html" class="footer__logo"><img src="img/logo-white.svg" /></a><a href="" class="btn-o">Разместить вакансию</a>
+      </div>
+      <ul class="footer__ul">
+        <li><a href="">Каталог вакансий</a></li>
+        <li><a href="">Отзывы</a></li>
+        <li><a href="">Публикации</a></li>
+        <li><a href="">Каталог работодателей</a></li>
+        <li><a href="">Черный список</a></li>
+        <li><a href="">О сайте</a></li>
+      </ul>
+      <div class="footer__socs">
+        <a href=""><img src="img/vk.svg" /></a>
+        <a href=""><img src="img/tg.svg" /></a>
+      </div>
+    </div>
+    <p>© 2022 Вахты.Ру <a href="">Политика обработки персональных данных</a> 
+      <a href="">Соглашение об использовании</a></p>
+  </div>
+</footer>
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

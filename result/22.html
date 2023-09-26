@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>22.Добавить отзыв</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/select2.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+      <div class="header__r">
+        <ul>
+          <li><a href="">Вакансии</a></li>
+          <li><a href="">Специальности</a></li>
+          <li><a href="">Работодатели</a></li>
+          <li><a href="">Отзывы</a></li>
+        </ul>
+        <a href="" class="header__fav">
+          <img src="img/fav.svg" />
+          <span>10</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+      <div class="tsearch"> 
+  <div class="contain">
+    <form class="hero__form">
+      <input type="text" placeholder="Должность или компания" />
+      <button class="btn2">Найти</button>
+    </form>
+    <a href="" class="btn">Разместить вакансию</a>
+  </div>
+</div>
+      <div class="addvacancie">
+        <div class="contain">
+          <h1>Добавить отзыв</h1>
+          <p>Ваши отзывы помогают соискателям. Найдите компанию через поиск и оставьте отзыв. Начните писать название компании в строке ниже и поиск по сайту подберёт наиболее похожую организацию. </p>
+          <form class="comp-search">
+            <input type="text" placeholder="Введите название компании">
+            <button class="btn">Выбрать</button>
+          </form>
+          <p>Если компании нет в каталоге, добавьте её вместе с отзывом через форму ниже. Добавление компании занимает не более 2 минут.</p>
+          <form class="addrev__form">
+            <div class="form__block">
+              <div class="h4">О вас</div>
+              <div class="form__block-in">
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Имя, Фамилия<sup>*</sup></p>
+                    <input type="text" placeholder="Можно анонимно">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Email <sup>*</sup></p>
+                    <input type="text" placeholder="Введите Email">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Кем работали <sup>*</sup></p>
+                    <input type="text" placeholder="Машинист буровой установки">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Стаж в компании</p>
+                    <input type="text" placeholder="Не указано, 1-2 года">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--bl-->
+            <div class="form__block">
+              <div class="h4">О компании</div>
+              <div class="form__block-in">
+                <div class="form__row">
+                  <div class="form__col-100">
+                    <p>Название компании<sup>*</sup></p>
+                    <input type="text" placeholder="Введите название компании">
+                  </div>                  
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>Регион деятельности<sup>*</sup></p>
+                    <input type="text" placeholder="">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Город<sup>*</sup></p>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col-50">
+                    <p>ИНН компании</p>
+                    <input type="text" placeholder="Введите ИНН компании">
+                  </div>
+                  <div class="form__col-50">
+                    <p>Ваша оценка<sup>*</sup></p>
+                    <select>
+                      <option value="Выбрать">Выбрать</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+              <div class="form__row">
+               <div class="form__col-100">
+                <p>Ваш отзыв<sup>*</sup></p>
+                <textarea placeholder="Старайтесь писать объективно и взвешенно изложить факты, избегайте обсценной лексики и раскрытия чужих персональных данных."></textarea>
+              </div>
+            </div>
+              </div>
+          </div><!--bl-->
+          <div class="confirm">
+            <img src="img/robot.jpg" alt="">
+            <button class="btn">Отправить</button>
+            <p>Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">  
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__l">
+        <a href="index.html" class="footer__logo"><img src="img/logo-white.svg" /></a><a href="" class="btn-o">Разместить вакансию</a>
+      </div>
+      <ul class="footer__ul">
+        <li><a href="">Каталог вакансий</a></li>
+        <li><a href="">Отзывы</a></li>
+        <li><a href="">Публикации</a></li>
+        <li><a href="">Каталог работодателей</a></li>
+        <li><a href="">Черный список</a></li>
+        <li><a href="">О сайте</a></li>
+      </ul>
+      <div class="footer__socs">
+        <a href=""><img src="img/vk.svg" /></a>
+        <a href=""><img src="img/tg.svg" /></a>
+      </div>
+    </div>
+    <p>© 2022 Вахты.Ру <a href="">Политика обработки персональных данных</a> 
+      <a href="">Соглашение об использовании</a></p>
+  </div>
+</footer>
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

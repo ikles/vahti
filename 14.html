@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14.Отзывы</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main>
+      @@include('var/_tsearch.html')
+      <div class="tvacancies">
+        <div class="contain">
+          <h1>Отзывы вахтовиков</h1>
+        </div>
+      </div>
+      <div class="filterlist">
+        <div class="contain">
+          <div class="row">
+            <div class="col-l">
+              @@include('var/_lfilter4.html')
+            </div><!--col-l-->
+            <div class="col-r">
+              @@include('var/_tsort3.html')              
+              <div class="filterlist__list2">
+                @@include('var/_filterlist__it5.html',{
+                  "title":"Транстех",
+                  "img":"<img src='img/filterlist-1.jpg' alt=''>",
+                  "text":"Полюс Красноярск, как и в целом группа полюс, со своими плюсами и минусами но стабильной конкурирующей зп, быт общежития, на высоком уровне вплоть до бильярдов, тренажерных залов, прачечных, столовых. Межвахта, проезд, перелет, оплачивается.",
+                  "cls": "like"
+                })
+                @@include('var/_filterlist__it5.html',{
+                  "title":"Севертранс",
+                  "img":"<img src='img/filterlist-3.jpg' alt=''>",
+                  "text":"В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята вовремя образумили..",
+                  "cls": "dis"
+                })
+                @@include('var/_filterlist__it5.html',{
+                  "title":"Севертранс",
+                  "img":"<img src='img/filterlist-3.jpg' alt=''>",
+                  "text":"В объявлении отписываются как бы север транс, а сами ИП Кленовы з/п обещают 90 т.р.но полный развод, мужики по несколько месяцев выехать не могут с вахты, а если выступать будешь, то могут по статье уволить и без денег отправить-я туда приезжал на трудоустройство, но не устроился т.к. ребята вовремя образумили..",
+                  "cls": "like"
+                })
+
+              </div>
+              @@include('var/_spagin.html')
+            </div><!--col-r-->
+          </div><!--row-->
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
