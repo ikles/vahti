@@ -22,7 +22,6 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-
 //levels menu
   let isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())}}
 
@@ -60,6 +59,32 @@ jQuery(document).ready(function( $ ) {
     arrows: true,
     dots: true,
     pauseOnHover: true,  
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5        
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+    ]
   });
 
   $('.reviews__slider').slick({
@@ -72,7 +97,21 @@ jQuery(document).ready(function( $ ) {
     autoplaySpeed: 0,  
     arrows: true,
     dots: true,
-    pauseOnHover: true,  
+    pauseOnHover: true, 
+     responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ] 
   });
 
 
@@ -93,7 +132,6 @@ jQuery(document).ready(function( $ ) {
   /*$('.biggest__slider .slick-prev').appendTo('.slick__actions');
   $('.biggest__slider .slick-dots').appendTo('.slick__actions');
   $('.biggest__slider .slick-next').appendTo('.slick__actions');*/
-
 
 
 /************************************/
